@@ -131,7 +131,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:1.9.0")
 
                 // Date / time
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.2")
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1-0.6.x-compat")
 
                 // finding in which country we are for country-specific logic
                 implementation("de.westnordost:countryboundaries:3.0.0")
@@ -215,19 +215,19 @@ kotlin {
         iosMain {
             dependencies {
                 // HTTP client
-                implementation("io.ktor:ktor-client-darwin:3.1.3")
+                implementation("io.ktor:ktor-client-darwin:3.2.2")
             }
         }
         commonTest {
             dependencies {
                 implementation(kotlin("test"))
 
-                implementation("io.ktor:ktor-client-mock:3.1.3")
+                implementation("io.ktor:ktor-client-mock:3.2.2")
             }
         }
         androidUnitTest {
             dependencies {
-                implementation("org.mockito:mockito-core:5.17.0")
+                implementation("org.mockito:mockito-core:5.18.0")
                 implementation(kotlin("test"))
             }
         }
