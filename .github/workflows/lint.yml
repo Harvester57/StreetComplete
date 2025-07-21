@@ -18,7 +18,7 @@ jobs:
 
       - name: Run Kotlin linter
         id: ktlint-check
-        uses: musichin/ktlint-check@v3.0.0
+        uses: musichin/ktlint-check@v3.3.0
         with:
           ktlint-version: "1.6.0"
           reporter: plain?group_by_file,output=${{ env.lintResultFilename }}
