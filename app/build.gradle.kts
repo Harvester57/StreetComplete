@@ -120,8 +120,8 @@ kotlin {
                 implementation("org.kotlincrypto.hash:sha2:0.7.0")
 
                 // XML
-                implementation("io.github.pdvrieze.xmlutil:core:0.91.1")
-                implementation("io.github.pdvrieze.xmlutil:core-io:0.91.1")
+                implementation("io.github.pdvrieze.xmlutil:core:0.91.2")
+                implementation("io.github.pdvrieze.xmlutil:core-io:0.91.2")
 
                 // YAML
                 implementation("com.charleskorn.kaml:kaml:0.85.0")
