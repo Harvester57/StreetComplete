@@ -114,14 +114,14 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.0")
 
                 // HTTP client
-                implementation("io.ktor:ktor-client-core:3.2.2")
-                implementation("io.ktor:ktor-client-encoding:3.2.2")
+                implementation("io.ktor:ktor-client-core:3.2.3")
+                implementation("io.ktor:ktor-client-encoding:3.2.3")
                 // SHA256 hashing, used during OAuth authentication
                 implementation("org.kotlincrypto.hash:sha2:0.7.0")
 
                 // XML
-                implementation("io.github.pdvrieze.xmlutil:core:0.91.1")
-                implementation("io.github.pdvrieze.xmlutil:core-io:0.91.1")
+                implementation("io.github.pdvrieze.xmlutil:core:0.91.2")
+                implementation("io.github.pdvrieze.xmlutil:core-io:0.91.2")
 
                 // YAML
                 implementation("com.charleskorn.kaml:kaml:0.85.0")
@@ -200,7 +200,7 @@ kotlin {
                 implementation("androidx.work:work-runtime-ktx:2.10.2")
 
                 // HTTP Client
-                implementation("io.ktor:ktor-client-android:3.2.2")
+                implementation("io.ktor:ktor-client-android:3.2.3")
 
                 // widgets
                 implementation("androidx.viewpager2:viewpager2:1.1.0")
@@ -209,20 +209,20 @@ kotlin {
                 implementation("com.github.chrisbanes:PhotoView:2.3.0")
 
                 // map and location
-                implementation("org.maplibre.gl:android-sdk:11.12.1")
+                implementation("org.maplibre.gl:android-sdk:11.12.2")
             }
         }
         iosMain {
             dependencies {
                 // HTTP client
-                implementation("io.ktor:ktor-client-darwin:3.2.2")
+                implementation("io.ktor:ktor-client-darwin:3.2.3")
             }
         }
         commonTest {
             dependencies {
                 implementation(kotlin("test"))
 
-                implementation("io.ktor:ktor-client-mock:3.2.2")
+                implementation("io.ktor:ktor-client-mock:3.2.3")
             }
         }
         androidUnitTest {
