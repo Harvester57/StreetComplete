@@ -32,3 +32,8 @@ updates:
       interval: "cron"
       cronjob: "0 7 * * *"
       timezone: "Europe/Paris"
+    groups:
+      gradle-dependencies:
+        applies-to: version-updates
+        patterns:
+        - "*"
