@@ -9,31 +9,21 @@ updates:
     directory: "/"
     commit-message:
       prefix: "actions"
-    labels: [ 'github_actions' ]
-    assignees:
-    - "Harvester57"
     schedule:
-      interval: "cron"
-      cronjob: "0 7 * * *"
-      timezone: "Europe/Paris"
+      interval: "daily"
     groups:
       actions-dependencies:
         applies-to: version-updates
         patterns:
-        - "*"
-  - package-ecosystem: "gradle" 
+          - "*"
+  - package-ecosystem: "gradle"
     directory: "/"
     commit-message:
       prefix: "gradle"
-    labels: [ 'gradle' ]
-    assignees:
-    - "Harvester57"
     schedule:
-      interval: "cron"
-      cronjob: "0 7 * * *"
-      timezone: "Europe/Paris"
+      interval: "weekly"
     groups:
       gradle-dependencies:
         applies-to: version-updates
         patterns:
-        - "*"
+          - "*"
