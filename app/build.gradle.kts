@@ -215,14 +215,14 @@ kotlin {
         iosMain {
             dependencies {
                 // HTTP client
-                implementation("io.ktor:ktor-client-darwin:3.1.3")
+                implementation("io.ktor:ktor-client-darwin:3.2.3")
             }
         }
         commonTest {
             dependencies {
                 implementation(kotlin("test"))
 
-                implementation("io.ktor:ktor-client-mock:3.1.3")
+                implementation("io.ktor:ktor-client-mock:3.2.3")
             }
         }
         androidUnitTest {
