@@ -36,7 +36,7 @@ plugins {
     id("org.jetbrains.kotlin.multiplatform") version "2.2.0"
     id("org.jetbrains.kotlin.plugin.serialization") version "2.2.0"
     id("org.jetbrains.kotlin.plugin.compose") version "2.2.0"
-    id("com.android.application") version "8.10.1"
+    id("com.android.application") version "8.12.0"
     id("org.jetbrains.compose") version "1.8.2"
     id("org.jetbrains.kotlinx.atomicfu") version "0.29.0"
     id("com.codingfeline.buildkonfig") version "0.17.1"
@@ -197,7 +197,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
                 // scheduling background jobs
-                implementation("androidx.work:work-runtime-ktx:2.10.2")
+                implementation("androidx.work:work-runtime-ktx:2.10.3")
 
                 // HTTP Client
                 implementation("io.ktor:ktor-client-android:3.2.2")
@@ -235,8 +235,8 @@ kotlin {
             dependencies {
                 implementation(kotlin("test"))
                 // android tests
-                implementation("androidx.test:runner:1.6.2")
-                implementation("androidx.test:rules:1.6.1")
+                implementation("androidx.test:runner:1.7.0")
+                implementation("androidx.test:rules:1.7.0")
             }
         }
     }
