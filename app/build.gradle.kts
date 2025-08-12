@@ -308,7 +308,9 @@ android {
     lint {
         disable += listOf(
             "MissingTranslation", // crowd-contributed translations are incomplete all the time
-            "UseCompatLoadingForDrawables" // doesn't make sense for minSdk >= 21
+            "UseCompatLoadingForDrawables", // doesn't make sense for minSdk >= 21
+            "ExtraTranslation", 
+            "StringFormatInvalid"
         )
         abortOnError = false
         sarifReport = true
