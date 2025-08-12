@@ -311,6 +311,7 @@ android {
             "UseCompatLoadingForDrawables" // doesn't make sense for minSdk >= 21
         )
         abortOnError = false
+        sarifReport = true
     }
 
     dependencies {
