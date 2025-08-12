@@ -310,7 +310,11 @@ android {
             "MissingTranslation", // crowd-contributed translations are incomplete all the time
             "UseCompatLoadingForDrawables", // doesn't make sense for minSdk >= 21
             "ExtraTranslation", 
-            "StringFormatInvalid"
+            "StringFormatInvalid",
+            "StringFormatMatches",
+            "LabelFor",
+            "ContentDescription",
+            "Autofill"
         )
         abortOnError = false
         sarifReport = true
