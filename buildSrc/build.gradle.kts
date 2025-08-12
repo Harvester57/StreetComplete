@@ -16,7 +16,7 @@ dependencies {
     implementation("com.esotericsoftware.yamlbeans:yamlbeans:1.17")
     implementation("org.jsoup:jsoup:1.18.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
-    implementation("com.charleskorn.kaml:kaml:0.77.1")
+    implementation("com.charleskorn.kaml:kaml:0.85.0")
     implementation("org.jetbrains:markdown:0.7.3")
 }
 
