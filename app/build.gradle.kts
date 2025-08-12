@@ -244,7 +244,7 @@ kotlin {
 
 android {
     namespace = "de.westnordost.streetcomplete"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "de.westnordost.streetcomplete"
