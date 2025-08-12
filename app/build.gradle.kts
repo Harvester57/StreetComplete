@@ -131,7 +131,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:1.9.0")
 
                 // Date / time
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1-0.6.x-compat")
 
                 // finding in which country we are for country-specific logic
                 implementation("de.westnordost:countryboundaries:3.0.0")
