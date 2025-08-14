@@ -131,7 +131,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:1.9.0")
 
                 // Date / time
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1-0.6.x-compat")
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
 
                 // finding in which country we are for country-specific logic
                 implementation("de.westnordost:countryboundaries:3.0.0")
@@ -244,7 +244,7 @@ kotlin {
 
 android {
     namespace = "de.westnordost.streetcomplete"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "de.westnordost.streetcomplete"
