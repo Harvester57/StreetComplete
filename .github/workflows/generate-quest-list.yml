@@ -14,17 +14,17 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
 
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v5
 
       - name: Generate quest list
         run: ./gradlew generateQuestList
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: quest-list.csv
           path: ./quest-list.csv

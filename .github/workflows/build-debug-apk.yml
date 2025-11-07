@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -34,7 +34,7 @@ jobs:
         run: mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/StreetComplete-debug-$COMMIT_SHA.apk
 
       - name: Archive APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: StreetComplete-debug-apk-${{ env.COMMIT_SHA }}
           path: app/build/outputs/apk/debug/*.apk
