@@ -33,11 +33,11 @@ val nsiVersion = "v6.0.20250720"
 val poEditorProjectId = "97843"
 
 plugins {
-    id("org.jetbrains.kotlin.multiplatform") version "2.2.0"
-    id("org.jetbrains.kotlin.plugin.serialization") version "2.2.0"
-    id("org.jetbrains.kotlin.plugin.compose") version "2.2.0"
+    id("org.jetbrains.kotlin.multiplatform") version "2.2.21"
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.2.21"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.2.21"
     id("com.android.application") version "8.12.0"
-    id("org.jetbrains.compose") version "1.8.2"
+    id("org.jetbrains.compose") version "1.9.3"
     id("org.jetbrains.kotlinx.atomicfu") version "0.29.0"
     id("com.codingfeline.buildkonfig") version "0.17.1"
 }
@@ -101,7 +101,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:atomicfu:0.29.0")
 
                 // Dependency injection
-                implementation(project.dependencies.platform("io.insert-koin:koin-bom:4.1.0"))
+                implementation(project.dependencies.platform("io.insert-koin:koin-bom:4.1.1"))
                 implementation("io.insert-koin:koin-core")
                 implementation("io.insert-koin:koin-compose")
                 implementation("io.insert-koin:koin-compose-viewmodel")
@@ -111,36 +111,36 @@ kotlin {
                 implementation("com.russhwolf:multiplatform-settings:1.3.0")
 
                 // I/O
-                implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.2")
 
                 // HTTP client
-                implementation("io.ktor:ktor-client-core:3.2.3")
-                implementation("io.ktor:ktor-client-encoding:3.2.3")
+                implementation("io.ktor:ktor-client-core:3.3.2")
+                implementation("io.ktor:ktor-client-encoding:3.3.2")
                 // SHA256 hashing, used during OAuth authentication
-                implementation("org.kotlincrypto.hash:sha2:0.7.0")
+                implementation("org.kotlincrypto.hash:sha2:0.8.0")
 
                 // XML
-                implementation("io.github.pdvrieze.xmlutil:core:0.91.2")
-                implementation("io.github.pdvrieze.xmlutil:core-io:0.91.2")
+                implementation("io.github.pdvrieze.xmlutil:core:0.91.3")
+                implementation("io.github.pdvrieze.xmlutil:core-io:0.91.3")
 
                 // YAML
-                implementation("com.charleskorn.kaml:kaml:0.85.0")
+                implementation("com.charleskorn.kaml:kaml:0.104.0")
 
                 // JSON
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:1.9.0")
 
                 // Date / time
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1-0.6.x-compat")
 
                 // finding in which country we are for country-specific logic
                 implementation("de.westnordost:countryboundaries:3.0.0")
 
                 // finding OSM features
-                implementation("de.westnordost:osmfeatures:7.0")
+                implementation("de.westnordost:osmfeatures:7.1.0")
 
                 // opening hours parser
-                implementation("de.westnordost:osm-opening-hours:0.2.0")
+                implementation("de.westnordost:osm-opening-hours:0.4.0")
 
                 // UI (Compose)
                 implementation(compose.runtime)
@@ -151,18 +151,18 @@ kotlin {
                 implementation(compose.components.uiToolingPreview)
 
                 // UI Navigation
-                implementation("org.jetbrains.androidx.navigation:navigation-compose:2.9.0-beta04")
+                implementation("org.jetbrains.androidx.navigation:navigation-compose:2.9.1")
 
                 // UI ViewModel
-                implementation("org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose:2.9.1")
+                implementation("org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose:2.9.6")
 
                 // UI widgets
 
                 // reorderable lists (raw Compose API is pretty complicated)
-                implementation("sh.calvin.reorderable:reorderable:2.5.1")
+                implementation("sh.calvin.reorderable:reorderable:3.0.0")
 
                 // multiplatform webview (for login via OAuth)
-                implementation("io.github.kevinnzou:compose-webview-multiplatform:2.0.2")
+                implementation("io.github.kevinnzou:compose-webview-multiplatform:2.0.3")
 
                 // sharing presets/settings via QR Code
                 implementation("io.github.alexzhirkevich:qrose:1.0.1")
@@ -200,7 +200,7 @@ kotlin {
                 implementation("androidx.work:work-runtime-ktx:2.10.3")
 
                 // HTTP Client
-                implementation("io.ktor:ktor-client-android:3.2.3")
+                implementation("io.ktor:ktor-client-android:3.3.2")
 
                 // widgets
                 implementation("androidx.viewpager2:viewpager2:1.1.0")
@@ -209,25 +209,25 @@ kotlin {
                 implementation("com.github.chrisbanes:PhotoView:2.3.0")
 
                 // map and location
-                implementation("org.maplibre.gl:android-sdk:11.13.0")
+                implementation("org.maplibre.gl:android-sdk:12.1.3")
             }
         }
         iosMain {
             dependencies {
                 // HTTP client
-                implementation("io.ktor:ktor-client-darwin:3.2.3")
+                implementation("io.ktor:ktor-client-darwin:3.3.2")
             }
         }
         commonTest {
             dependencies {
                 implementation(kotlin("test"))
 
-                implementation("io.ktor:ktor-client-mock:3.2.3")
+                implementation("io.ktor:ktor-client-mock:3.3.2")
             }
         }
         androidUnitTest {
             dependencies {
-                implementation("org.mockito:mockito-core:5.18.0")
+                implementation("org.mockito:mockito-core:5.20.0")
                 implementation(kotlin("test"))
             }
         }
